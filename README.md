@@ -160,7 +160,120 @@ Les activités APICredsActivity et APICreds2Activity sont accessibles par n'impo
 
 NotesProvider est accessible à toutes les apps sans permission — fuite de données possible.
 
-# Task 5 — Analyse de la configuration réseau
+# Task 5 — Analyse de la configuration réseau: N'est pas disponible.
+
+# Task 6 — Analyse du code et des ressources 
+
+<img width="1568" height="605" alt="image" src="https://github.com/user-attachments/assets/bd5a98af-6b63-447e-8ced-ccc0226504e8" />
+
+Étape 1 — Créer le fichier des vulnérabilités
+
+<img width="1215" height="761" alt="image" src="https://github.com/user-attachments/assets/a358772d-caa6-410b-a495-5a6414b75e60" />
+
+Étape 2 — Créer le fichier des ressources sensibles
+
+<img width="1205" height="348" alt="image" src="https://github.com/user-attachments/assets/5fe7d75e-2283-432f-a426-f3415b4ca406" />
+
+Étape 3 — Vérification finale
+
+<img width="897" height="206" alt="image" src="https://github.com/user-attachments/assets/897ef9a9-21d4-4808-afd0-ada1e29d3eaf" />
+
+Points importants :
+🔴 Le plus critique : android:debuggable=true + BuildConfig.java confirment que c'est un build de debug en production — double confirmation.
+
+🟡 Pattern récurrent : Les activités InsecureDataStorage (2, 3, 4) montrent que DIVA est intentionnellement vulnérable 
+
+sur le thème du stockage non sécurisé — c'est une app d'entraînement !
+
+# Task 7 — Corrélation avec OWASP MASVS 
+
+Étape 1 — Créer le fichier de corrélation MASVS
+
+Accés à la documentation MASVS : https://mas.owasp.org/MASVS/
+
+<img width="1920" height="982" alt="image" src="https://github.com/user-attachments/assets/acea7e3b-c8bd-4515-a7e7-9e8283e61177" />
+
+Étape 1 — Créer le fichier de corrélation MASVS
+
+Vulnérabilité 1 — SQL Injection
+Vulnérabilité 2 — Stockage externe non sécurisé
+Vulnérabilité 3 — Fichier temporaire sensible
+Vulnérabilité 4 — Debug activé en production
+Vulnérabilité 5 — Logs sensibles
+
+<img width="1395" height="762" alt="image" src="https://github.com/user-attachments/assets/1cb49232-c5ba-428e-bfff-8c71fbe4efee" />
+
+Étape 2 — Ajouter les tests MASTG complémentaires
+
+<img width="1410" height="240" alt="image" src="https://github.com/user-attachments/assets/10f6ca14-a9a4-4a83-a34b-a7158bbac38d" />
+
+Étape 3 — Vérifier le fichier complet
+
+<img width="1116" height="536" alt="image" src="https://github.com/user-attachments/assets/ab0c8c4c-80f5-4257-a40c-5af57d0e0bd3" />
+
+<img width="1102" height="338" alt="image" src="https://github.com/user-attachments/assets/0631cea9-fe49-47a8-9c40-a117712b42ec" />
+
+# Task 8 — Exportation et analyse du rapport complet
+
+Étape 1 — Exporter le rapport PDF depuis MobSF:
+
+<img width="1912" height="822" alt="image" src="https://github.com/user-attachments/assets/0fd19acc-7caf-41d3-9788-8b8a36b40597" />
+
+Téléchargement du rapport dans le dossier de travail et renommage du fichier avec un nom explicite :
+
+<img width="942" height="201" alt="image" src="https://github.com/user-attachments/assets/26788d6e-6f30-4c7b-89ea-3c1180a75764" />
+
+Étape 2 — Créer le fichier Top Vulnérabilités
+
+<img width="1103" height="430" alt="image" src="https://github.com/user-attachments/assets/30f30737-ab05-4cd9-9a72-9a62a3d51af1" />
+
+Étape 3 — Ajouter les faux positifs potentiels
+
+<img width="1082" height="297" alt="image" src="https://github.com/user-attachments/assets/265fae47-53ac-49a7-a9bc-71afcd1d0407" />
+
+Étape 4 — Vérification finale de tous les fichiers
+
+<img width="936" height="491" alt="image" src="https://github.com/user-attachments/assets/1c28766e-06db-4416-b6b9-12a9c96e42d1" />
+
+# Task 9 — Rédaction du mini-rapport d'audit
+
+Étape 1 — Créer le fichier 
+
+<img width="703" height="107" alt="image" src="https://github.com/user-attachments/assets/b5055a9e-6ff2-4cb3-9493-be27c692ae20" />
+
+
+<img width="1905" height="848" alt="image" src="https://github.com/user-attachments/assets/b6fd73df-7e6c-4896-a129-4e5c3a3bb1be" />
+
+
+Étape 2 — Finaliser la traçabilité
+
+<img width="900" height="335" alt="image" src="https://github.com/user-attachments/assets/f5e252b2-d613-49ed-94e1-b4ccc6db0051" />
+
+Structure du rapport: 
+
+<img width="910" height="841" alt="image" src="https://github.com/user-attachments/assets/bdc35205-c4cd-44c2-8606-fc9eb550c251" />
+
+<img width="911" height="815" alt="image" src="https://github.com/user-attachments/assets/69429c49-6a13-46b5-b2ea-37daaf5596d9" />
+
+<img width="940" height="671" alt="image" src="https://github.com/user-attachments/assets/3571cde5-7c63-4343-b00c-5602ad14f4ae" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
